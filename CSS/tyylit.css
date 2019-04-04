@@ -1,0 +1,22 @@
+﻿body
+{
+}
+img {
+	clear: both;
+	float: left;
+	width: 480px;
+	margin-right: 10px;
+	/* margin: 0 10 0 0;*/
+}
+#kuva2 {
+	margin-bottom: 10px;
+
+}
+
+h1 {
+	font-family: 'Over the Rainbow', cursive;
+}
+p {
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: justify;
+}

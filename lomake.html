@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Lomake harjoitus</title>
+	<link href="CSS/lomaketyyli.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<table>
+<tr>
+<th colspan="2"><h1>Tiedon keruu!</h1></th>
+</tr>
+<tr>
+<form>
+<td class="otsikko"><h2>Nimi:</h2></td>
+<td><input type="text" name="nimi" size="20"></td>
+</tr>
+<tr>
+<td class="otsikko"><h2>S&auml;hk&ouml;posti:</h2></td>
+<td><input type="email" name="email" autocomplete="off"></td>
+</tr>
+<tr>
+<td class="otsikko"><h2>Sijainti:</h2></td>
+<td><select name="sijainti">
+<option value="Helsinki">Helsinki</option>
+<option value="Espoo">Espoo</option>
+<option value="Vantaa">Vantaa</option>
+<option value="Muu">Muu</option>
+</select></td>
+</tr>
+<tr>
+<td class="otsikko"><h2>Sukupuoli:</h2></td>
+<td><input type="radio" name="gender" value="male" checked>Mies<br>
+<input type="radio" name="gender" value="female" checked>Nainen<br>
+<input type="radio" name="gender" value="other" checked>Muu<br>
+</td>
+</tr>
+<tr>
+<td class="otsikko"><h2>Syntym&auml;p&auml;iv&auml;:</h2></td>
+<td><input type="date" name="bdau"></td>
+</tr>
+<tr>
+<td class="otsikko"><h2>Arvosana koulutukselle:</h2></td>
+<td><input type="number" name="arvosana" min="0" max="5"></td>
+</tr>
+<tr>
+<td class="otsikko"><h2>Tulen kouluun</h2></td>
+<td><input type="checkbox" name="vehicle1" value="bus">bussilla
+	<input type="checkbox" name="vehicle2" value="walk">k&auml;vellen<br>
+	<input type="checkbox" name="vehicle3" value="train">junalla
+	<input type="checkbox" name="vehicle4" value="metro">metrolla<br>
+	<input type="checkbox" name="vehicle5" value="car">autolla
+	<input type="checkbox" name="vehicle6" value="bike">py&ouml;r&auml;ll&auml;<br>
+	<input type="checkbox" name="vehicle7" value="ratikalla">raitiovaunulla
+	<input type="checkbox" name="vehicle8" value="other">jollain muulla<br>
+</td>
+</tr>
+<tr>
+<td class="otsikko"><h2>Kommentit:</h2></td>
+<td><textarea name="messages" rows="10" cols="30"></textarea></td>
+</tr>
+<tr><td></td>
+<td><input type="submit" value="l&auml;het&auml;">
+</td>
+</tr>
+</form>
+</table>
+</body>
+</html>
