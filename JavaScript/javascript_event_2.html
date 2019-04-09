@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Event Capturing and Bubbling in JavaScript</title>
+</head>
+<body id="theBody" class="item">
+	<div id="one_a" class="item">
+		<div id="two" class="item">
+			<div id="three_a" class="item">
+				<button id="buttonOne" class="item">One</button>
+		</div>
+		<div id="three_b" class="item">
+			<button id="buttonTwo" class="item">Two</button>
+			<button id="buttonThree" class="item">Three</button>
+		</div>
+	</div>
+</div>
+<div id="one_b" class="item">
+</div>
+
+<script>
+	var items = document.querySelectorAll(".item");
+
+	for (var i = 0; i < items.length; i++) {
+		var el = items[i];
+
+		//capturing phase
+		el.addEventListener("click", doSomething, true);
+
+		//bubbling phase
+		el.addEventListener("click", doSomething, false);
+	}
+	function doSomething(e) {
+		console.log(e.currentTarget.id);
+	}
+</script>
+</body>
+</html>
