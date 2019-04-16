@@ -1,0 +1,24 @@
+﻿body
+{
+}
+#kuva1 {
+	clear: both;
+	float: left;
+	width: 480px;
+	margin: 10px 10px 10px 10px;
+}
+#kuva2 {
+	clear: both;
+	float: right;
+	width: 480px;
+	margin: 10px;
+
+}
+
+h1 {
+	font-family: 'Over the Rainbow', cursive;
+}
+p {
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: justify;
+}

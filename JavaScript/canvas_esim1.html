@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Canvas esimerkkejä 1</title>
+</head>
+<body>
+
+<canvas width="250" height="250" id="canvas1"></canvas>
+<canvas width="250" height="250" id="canvas2"></canvas>
+<canvas width="250" height="250" id="canvas3"></canvas>
+
+<script>
+
+	// neliön muotoinen canvas
+	var canvas = document.getElementById("canvas1");
+	var c = canvas.getContext("2d");
+	c.fillStyle = "red";
+	c.fillRect(20, 30, 40, 50);
+
+	// kolmion muotoinen canvas
+	var canvas = document.getElementById("canvas2");
+	var c = canvas.getContext("2d");
+	c.fillStyle = "#ccddff";
+	c.beginPath();
+	c.moveTo(50, 20);
+	c.lineTo(200, 50);
+	c.lineTo(150, 80);
+	c.closePath();
+	c.fill();
+	c.strokeStyle = "rgb(0, 128, 0)";
+	c.lineWidth = 5;
+	c.stroke();
+
+	// aallon muotoinen canvas
+	var canvas = document.getElementById("canvas3");
+	var c = canvas.getContext("2d");
+	c.fillStyle = "blue";
+	c.beginPath();
+	c.moveTo(10, 30);
+	c.bezierCurveTo(50, 90, 159, -30, 200, 30);
+	c.lineTo(200, 90);
+	c.lineTo(10, 90);
+	c.closePath();
+	c.fill();
+	c.lineWidth = 4;
+	c.strokeStyle = "black";
+	c.stroke();
+
+</script>
+</body>
+</html>

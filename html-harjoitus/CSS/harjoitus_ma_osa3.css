@@ -1,0 +1,52 @@
+﻿body {
+	background-color: #000;
+	font-family: arial;
+	margin: 0 auto;
+	max-width: 600px;
+}
+div {
+	background-color: #ffffff;
+	height: 600px;
+	width: 600px;
+	padding: 10px;
+	margin: 150px 0 0 0;
+}
+h3.oikeanimi {
+	color: #333333;
+}
+span.user {
+	color: #787878;
+}
+p.paateksti {
+	font-size: 18px;
+}
+span.date {
+	color: #787878;
+}
+#user2 {
+	text-weight: bold;
+}
+img {
+	height: 50%;
+	width: 75%;
+	margin: 10px auto;
+}
+/* unvisited link */
+a:link {
+  color: #008AB9;
+}
+
+/* visited link */
+a:visited {
+  color: #008AB9;
+}
+
+/* mouse over link */
+a:hover {
+  color: #008AB9;
+}
+
+/* selected link */
+a:active {
+  color: #008AB9;
+}

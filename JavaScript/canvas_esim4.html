@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>canvas esimerkkejä 4</title>
+</head>
+<body>
+
+<canvas width="250" height="250" id="can"></canvas>
+<canvas width="250" height="250" id="can2"></canvas>
+
+<script>
+
+	var img = new Image();
+	img.onload = function() {
+
+	var canvas = document.getElementById("can");
+	var ctx = canvas.getContext("2d");
+
+	var pat1 = ctx.createPattern(img, "repeat-y");
+	ctx.fillStyle = pat1;
+	ctx.fillRect(100, 0, 500, 250);
+}
+img.src = "smile.svg";
+
+	var img2 = new Image();
+	img2.onload = function() {
+
+	var canvas2 = document.getElementById("can2");
+	var ctx2 = canvas2.getContext("2d");
+
+	var pat2 = ctx2.createPattern(img2, "repeat-y");
+	ctx2.fillStyle = pat2;
+	ctx2.translate(200,0);
+	ctx2.fillRect(0, 0, 100, 100);
+}
+img2.src = "smile.svg";
+
+</script>
+</body>
+</html>

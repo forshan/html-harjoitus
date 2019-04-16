@@ -1,0 +1,64 @@
+﻿h1 {
+	color: rgb(0,255,0);
+}
+h2 {
+	font-family: 'Mrs Sheppards', cursive;
+}
+.number1 {
+	font-size: 14px;
+	color: #FFEBCD;
+}
+.number2 {
+	font-size: 16px;
+	color: 	#0000FF;
+}
+.number3 {
+	font-size: 18px;
+	color: 	#8A2BE2;
+}
+.number4 {
+	font-size: 20px;
+	color: #A52A2A;
+}
+.number5 {
+	font-size: 22px;
+	color: #DEB887;
+}
+.number6 {
+	font-size: 24px;
+	color: 	#5F9EA0;
+}
+.number7 {
+	font-size: 22px;
+	color: 	#7FFF00;
+}
+.number8 {
+	font-size: 20px;
+	color: 	#D2691E;
+}
+.number9 {
+	font-size: 18px;
+	color: 	#FF7F50;
+}
+.number10 {
+	font-size: 16px;
+	color: 	#6495ED;
+}
+h3 {
+	font-family: arial;
+}
+#first {
+	font-family: 'Puritan', sans-serif;
+}
+#second {
+	font-family: 'Krub', sans-serif;
+}
+#third {
+	font-family: 'Montez', cursive;
+}
+#forth {
+	font-family: 'Crafty Girls', cursive;
+}
+#five {
+	font-family: 'UnifrakturMaguntia', cursive;
+}
