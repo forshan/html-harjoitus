@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Create a basic particle system</title>
+	<style>
+		canvas {
+			border: 1px dashed black;
+			margin-left: 25px;
+		}
+
+		.buttonStyle {
+			border-radius: 4px;
+			border: thin solid #f8f020;
+			padding: 5px;
+			background-color: #f8f094;
+			font-family: Tahoma;
+			font-weight: bold;
+			color: #663300;
+			width: 75px;
+			margin-left: 25px;
+		}
+	</style>
+	<script>
+		this.addEventListener("DOMContentLoaded", ready, true);
+
+		function ready(e) {
+			var canvas;
+			var canvasWidth;
+			var canvasHeight;
+			var ctx;
+			var particles = [];
+
+			canvas = document.getElementById('mycanvas');
+			canvasWidth = 450;
+			canvasHeight = 200;
+			ctx = canvas.getContext('2d');
+
+			canvas.width = canvasWidth;
+			canvas.height = canvasHeight;
+
+			Math.nRandom = function () {
+				return Math.random() * 2 - 1;
+			};
+
+			var Particle = function () {
+				this.x = Math.random() * canvasWidth;
+				this.y = Math.random() * canvasHeight;
+				this.vx = Math.nRandom() * 30;
+				this.vy = Math.nRandom() * 30;
+				this.r = Math.random() * 20 + 5;
+				this.dt = 0.05;
+
+				var color = 'hsl(' + Math.floor(Math.random() * 360) + ', 100%, 50%)';
+
+				this.update = function () {
+					this.x += this.vx * this.dt;
+					this.y += this.vy * this.dt;
+				};
+
+				this.draw = function () {
+					ctx.beginPath();
+					ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
+					ctx.closePath();
+					ctx.fillStyle = color;
+					ctx.fill();
+				};
+			};
+
+			function addParticles(nmbr) {
+				for (var i = 0; i < nmbr; i++) {
+					var p = new Particle;
+					particles.push(p);
+				};
+			};
+			addParticles(10);
+
+			function redrawAndUpdate() {
+				ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+				for (var i = 0; i < particles.length; i++) {
+					particles[i].update();
+					particles[i].draw();
+				}
+			}
+
+			setInterval(redrawAndUpdate, 50);
+
+			// code for handling the button!
+			var myButton = document.getElementById("clickbutton");
+			myButton.addEventListener("click",
+				function () {
+					addParticles(10);
+				}, false);
+		}
+	</script>
+</head>
+
+<body>
+	<canvas id="mycanvas"></canvas>
+	<p>
+		<button id="clickbutton" class="buttonStyle">add more</button>
+	</p>
+</body>
+
+</html>
