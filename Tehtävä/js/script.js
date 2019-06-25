@@ -10,15 +10,31 @@ function lahetaVastaukset() {
     var k3 = document.forms["kyselyLomake"]["k3"].value;
     var k4 = document.forms["kyselyLomake"]["k4"].value;
     var k5 = document.forms["kyselyLomake"]["k5"].value;
-}
-// Tarkastus
-for (i = 1; i <= yhteensa; i++)
-    {
-        if (eval('k' + 1) == null || eval('k' + 1) == '')
-        {
-            alert('Et vastannut kysymykseen numero ' + i);
-            huom = 1;
-        }
-        if (huom = 1) return false;
-}
 
+// Tarkastus
+	for (i = 1; i <= yhteensa; i++)
+		{
+			if (eval('k' + 1) == null || eval('k' + 1) == '')
+			{
+				alert('Et vastannut kysymykseen numero ' + i);
+				huom = 1;
+			}
+			if (huom = 1) return false;
+		}
+// Aseta oikeat vastaukset
+	var vastaukset = ["b", "a", "d", "b", "d"];
+	
+// Tarkista oikeat vastaukset
+	for(i = 1; i <= yhteensa; i++)
+	{
+		if(eval('k'+i) == vastaukset[i-1])
+		{
+			pisteet++;
+		}
+	}
+// N‰yt‰ tulokset
+	var tulokset = document.getElementById('tulokset');
+	alert('Sait' + pisteet + ' pistett‰, kun maksimi pistem‰‰r‰ oli ' + yhteensa);
+	tulokset.innerHTML = '<h3>Sait <span>' + pisteet + '</span> pistett‰, kun maksimi pistem‰‰r‰ oli <span>' + yhteensa + '</span></h3>';
+	return false;
+}
