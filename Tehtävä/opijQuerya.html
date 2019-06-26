@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Opi jQueryä</title>
+    <style>
+        .red{color: red;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('omaLinkki').on('click', function() {
+                $('h1').addClass('red');
+            });
+        });
+    </script>
+</head>
+<body>
+        <h1>Hei kaikille</h1>
+        <a href="#" class="omaLinkki">Klikkaa mua</a>
+</body>
+</html>
