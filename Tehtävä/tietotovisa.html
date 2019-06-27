@@ -13,46 +13,47 @@
                 <h1>Javascript tietovisa</h1>
                 <p>Testaa tietosi <strong>yksinkertaisessa javascript tietovisassa</strong></p>
             </header>
-	<section>		
-			<div id="tulokset"></div>
-            <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
-                <h2>1. Mihin HTML elementtiin sijoitamme javascript koodin?</h2>
-                <input type="radio" name="k1" value="a" id="ky1a" />a&nbsp;&lt;js&gt;<br />
-                <input type="radio" name="k1" value="b" id="ky1b" />b&nbsp;&lt;script&gt;<br />
-                <input type="radio" name="k1" value="c" id="ky1c" />c&nbsp;&lt;link&gt;<br />
-                <input type="radio" name="k1" value="c" id="ky1d" />d&nbsp;&lt;body&gt;<br />
-            </form>
-            <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
-                <h2>2. Mitä HTML attribuuttia käytetään viittaamaaan ulkoiseen javascript tiedostoa?</h2>
-                <input type="radio" name="k2" value="a" id="ky2a" />a&nbsp;src<br />
-                <input type="radio" name="k2" value="b" id="ky2b" />b&nbsp;link<br />
-                <input type="radio" name="k2" value="c" id="ky2c" />c&nbsp;rel<br />
-                <input type="radio" name="k2" value="c" id="ky2d" />d&nbsp;href<br />
-            </form>
-            <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
-                <h2>3. Kuinka kirjoitat "Moikka" alert-viestinä?</h2>
-                <input type="radio" name="k3" value="a" id="ky3a" />a&nbsp;msg(&quot;Moikka&quot;);<br />
-                <input type="radio" name="k3" value="b" id="ky3b" />b&nbsp;alertBox(&quot;Moikka&quot;);<br />
-                <input type="radio" name="k3" value="c" id="ky3c" />c&nbsp;document.write(&quot;Moikka&quot;);<br />
-                <input type="radio" name="k3" value="c" id="ky3d" />d&nbsp;alert(&quot;Moikka&quot;);<br />
-            </form>
-            <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
-                <h2>4. Javascript on suoraan "Java" ohjelmointikielen sukulainen</h2>
-                <input type="radio" name="k4" value="k" id="ky4k" />kyllä<br />
-                <input type="radio" name="k4" value="e" id="ky4e" />ei<br />
-            </form>
-            <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
-                <h2>5. Javascript muuttuja pitää alkaa tietyllä merkillä</h2>
-                <input type="radio" name="k5" value="a" id="ky5a" />a&nbsp;@<br />
-                <input type="radio" name="k5" value="b" id="ky5b" />b&nbsp;$<br />
-                <input type="radio" name="k5" value="c" id="ky5c" />c&nbsp;#<br />
-                <input type="radio" name="k5" value="c" id="ky5d" />d&nbsp;Ei&nbsp;tarvitse&nbsp;tietty&auml;&nbsp;merkki&auml;<br /><br />
+            <section>
+                <div id="tulokset"></div>
+                <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
+                    <h2>1. Mihin HTML elementtiin sijoitamme javascript koodin?</h2>
+                    <input type="radio" name="k1" value="a" id="k1a" />a&nbsp;&lt;js&gt;<br />
+                    <input type="radio" name="k1" value="b" id="k1b" />b&nbsp;&lt;script&gt;<br />
+                    <input type="radio" name="k1" value="c" id="k1c" />c&nbsp;&lt;link&gt;<br />
+                    <input type="radio" name="k1" value="d" id="k1d" />d&nbsp;&lt;body&gt;<br />
+                </form>
+                <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
+                    <h2>2. Mitä HTML attribuuttia käytetään viittaamaaan ulkoiseen javascript tiedostoa?</h2>
+                    <input type="radio" name="k2" value="a" id="k2a" />a&nbsp;src<br />
+                    <input type="radio" name="k2" value="b" id="k2b" />b&nbsp;link<br />
+                    <input type="radio" name="k2" value="c" id="k2c" />c&nbsp;rel<br />
+                    <input type="radio" name="k2" value="d" id="k2d" />d&nbsp;href<br />
+                </form>
+                <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
+                    <h2>3. Kuinka kirjoitat "Moikka" alert-viestinä?</h2>
+                    <input type="radio" name="k3" value="a" id="k3a" />a&nbsp;msg(&quot;Moikka&quot;);<br />
+                    <input type="radio" name="k3" value="b" id="k3b" />b&nbsp;alertBox(&quot;Moikka&quot;);<br />
+                    <input type="radio" name="k3" value="c" id="k3c" />c&nbsp;document.write(&quot;Moikka&quot;);<br />
+                    <input type="radio" name="k3" value="d" id="k3d" />d&nbsp;alert(&quot;Moikka&quot;);<br />
+                </form>
+                <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
+                    <h2>4. Javascript on suoraan "Java" ohjelmointikielen sukulainen</h2>
+                    <input type="radio" name="k4" value="a" id="k4a" />kyllä<br />
+                    <input type="radio" name="k4" value="b" id="k4b" />ei<br />
+                </form>
+                <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
+                    <h2>5. Javascript muuttuja pitää alkaa tietyllä merkillä</h2>
+                    <input type="radio" name="k5" value="a" id="k5a" />a&nbsp;@<br />
+                    <input type="radio" name="k5" value="b" id="k5b" />b&nbsp;$<br />
+                    <input type="radio" name="k5" value="c" id="k5c" />c&nbsp;#<br />
+                    <input type="radio" name="k5" value="d" id="k5d" />d&nbsp;Ei&nbsp;tarvitse&nbsp;tietty&auml;&nbsp;merkki&auml;<br /><br />
 
-                <input type="submit" value="Tarkista&nbsp;vastaukset" />
-            </form>
+                    <input type="submit" value="Tarkista&nbsp;vastaukset" />
+                </form>
 
-            <footer>Hannu Forsberg</footer>
+                <footer>Hannu Forsberg</footer>
+            </section>
         </div>
-    </section>
+    
 </body>
 </html>
